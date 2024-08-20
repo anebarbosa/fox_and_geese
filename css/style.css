@@ -1,0 +1,171 @@
+body {
+    padding-top: 80px;
+    background-color: #F6F6F6;
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+  
+  .topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+    background-color: #333;
+    color: #FFF;
+    z-index: 2;
+  }
+  
+  .topo ul {
+    float: right;
+  }
+  
+  .topo ul li {
+    list-style: none;
+    float: left;
+    width: 200px;
+  }
+  
+  .topo a {
+    color: #FFF;
+  }
+  
+  .topo span.raposa {
+    color: #DA4453;
+  }
+  
+  .legenda {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 250px;
+    height: 0;
+    background-color: #FFF;
+    color: #000;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+  }
+  .legenda.aberta {
+    height: 100%;
+  }
+  
+  .legenda ul {
+    margin-top: 80px;
+  }
+  
+  .legenda li {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  section {
+    position: relative;
+    margin: 0px auto;
+    width: 600px;
+  }
+  
+  section ul {
+    clear: both;
+  }
+  
+  section ul li {
+    list-style: none;
+    float: left;
+    width: 80px;
+    height: 80px;
+  }
+  .triplo {
+    margin-left: 160px;
+  }
+  input[type="button"] {
+    background-color: #333;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    margin-left: 6px;
+  }
+  input[type="button"].ganso,
+  input[type="button"].raposa {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  input[type="button"].ganso {
+    /*background-color: #FFF;*/
+    background-image: url('../img/ganso.png');
+    background-size: cover;
+    background-position: center;
+    border: 0px solid #FFF;;
+  }
+  input[type="button"].raposa {
+    /*background-color: #DA4453;*/
+    background-image: url('../img/raposa.png');
+    background-size: cover;
+    background-position: center;
+    border: 0px solid #DA4453;
+  }
+  input[type="button"].ganso.selecionado {
+    border: 3px solid #48CFAD;
+  }
+  input[type="button"].jogavel {
+      background-color: #FFF;
+      border: 3px solid #008ED4;
+  }
+  
+  /* MODAL */
+  #overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .6;
+    z-index: 999;
+    display: none;
+  }
+  #overlay.aberta {
+    display: block;
+  }
+  #modal {
+    width: 400px;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    background-color: #E5E5E5;
+    z-index: 1000;
+    display: none;
+  }
+  #modal.aberta {
+    display: block;
+  }
+  #modal .titulo {
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+    background-color: #333;
+  }
+  #modal .titulo h1 {
+    margin: 0 0 0 10px;
+    font-size: 20px;
+    color: #FFF;
+  }
+  #modal span {
+    padding: 10px;
+  }
+  #modal a.fechar {
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    background-color: #333;
+    color: #FFF;
+    text-decoration: none;
+    float: right;
+  }
+  
