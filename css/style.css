@@ -14,16 +14,22 @@ body {
     background-color: #333;
     color: #FFF;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
   }
   
   .topo ul {
-    float: right;
+    display: flex;
+    margin: 0;
+    padding: 0;
   }
   
   .topo ul li {
     list-style: none;
-    float: left;
-    width: 200px;
+    margin-left: 100px;
+    /* width: 200px; */
   }
   
   .topo a {
@@ -89,12 +95,20 @@ body {
     margin-left: 6px;
   }
   input[type="button"].ganso,
+  input[type="button"].ganso-legenda,
   input[type="button"].raposa {
     width: 30px;
     height: 30px;
     margin: 0;
   }
   input[type="button"].ganso {
+    /*background-color: #FFF;*/
+    background-image: url('../img/ganso.png');
+    background-size: cover;
+    background-position: center;
+    border: 0px solid #FFF;;
+  }
+  input[type="button"].ganso-legenda {
     /*background-color: #FFF;*/
     background-image: url('../img/ganso.png');
     background-size: cover;
@@ -109,6 +123,9 @@ body {
     border: 0px solid #DA4453;
   }
   input[type="button"].ganso.selecionado {
+    border: 3px solid #48CFAD;
+  }
+  input[type="button"].ganso-legenda.selecionado {
     border: 3px solid #48CFAD;
   }
   input[type="button"].jogavel {
